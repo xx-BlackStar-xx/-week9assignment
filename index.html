@@ -1,0 +1,203 @@
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philly Street Eats | Online Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="truck_header">
+        <h1>Philly Street Eats</h1>
+        <p>Good Cheesesteaks, Wherever You Are</p>
+
+        <img src="images/food-truck.jpg"
+             alt="Philly Street Eats food truck"
+             class="truck_image">
+
+        <h2>About Us</h2>
+        <p>
+            Welcome to Philly Street Eats! We are a local food truck
+            serving up fresh cheesesteaks around Philadelphia.
+            From classic steak and cheese to chicken cheesesteaks,
+            we have something for everyone. Stop by and grab a
+            quick bite!
+        </p>
+
+        <p><strong>Food Served:</strong> Cheesesteaks, fries, wings, and drinks.</p>
+        <p><strong>Service Area:</strong> Philadelphia, Pennsylvania.</p>
+    </header>
+
+    <main>
+        <h2 class="form_heading">Place Your Order</h2>
+
+        <p class="instructions">
+            Ready to order? Fill out the form below and pick out
+            what you want. You can add toppings, choose a drink,
+            and let us know when you want to pick everything up.
+        </p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <label for="customer_name">Name:</label>
+                <input type="text" id="customer_name"
+                       name="customer_name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                       name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone"
+                       name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Our Menu</legend>
+                <p>Check off the items you would like.</p>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="classic"
+                           name="food" value="Classic Cheesesteak">
+                    <label for="classic">
+                        <strong>Classic Cheesesteak $10.99</strong>
+                        <br>Steak cooked on the grill with melted American cheese.
+                    </label>
+                </div>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="chicken"
+                           name="food" value="Chicken Cheesesteak">
+                    <label for="chicken">
+                        <strong>Chicken Cheesesteak $10.49</strong>
+                        <br>Grilled chicken topped with melted cheese.
+                    </label>
+                </div>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="buffalo"
+                           name="food" value="Buffalo Cheesesteak">
+                    <label for="buffalo">
+                        <strong>Buffalo Cheesesteak $11.49</strong>
+                        <br>Chicken cheesesteak with buffalo sauce and cheese.
+                    </label>
+                </div>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="fries"
+                           name="food" value="Loaded Fries">
+                    <label for="fries">
+                        <strong>Loaded Fries $6.99</strong>
+                        <br>Fries topped with cheese and steak.
+                    </label>
+                </div>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="wings"
+                           name="food" value="Chicken Wings">
+                    <label for="wings">
+                        <strong>Chicken Wings $8.99</strong>
+                        <br>Six wings with your choice of sauce.
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Customize Your Order</legend>
+
+                <p><strong>Sandwich Size:</strong></p>
+
+                <input type="radio" id="regular"
+                       name="size" value="Regular" checked>
+                <label for="regular">Regular</label>
+
+                <input type="radio" id="large"
+                       name="size" value="Large">
+                <label for="large">Large</label>
+
+                <p><strong>Add Extra Toppings:</strong></p>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="onions"
+                           name="extras" value="Fried Onions">
+                    <label for="onions">Fried Onions (+$0.50)</label>
+                </div>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="peppers"
+                           name="extras" value="Green Peppers">
+                    <label for="peppers">Green Peppers (+$0.50)</label>
+                </div>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="mushrooms"
+                           name="extras" value="Mushrooms">
+                    <label for="mushrooms">Mushrooms (+$0.75)</label>
+                </div>
+
+                <div class="menu_item">
+                    <input type="checkbox" id="bacon"
+                           name="extras" value="Bacon">
+                    <label for="bacon">Bacon (+$1.00)</label>
+                </div>
+
+                <label for="drink"><strong>Pick a Drink:</strong></label>
+                <select id="drink" name="drink">
+                    <option value="">Select a drink</option>
+                    <option value="Water">Bottled Water</option>
+                    <option value="Cola">Cola</option>
+                    <option value="Lemonade">Lemonade</option>
+                    <option value="Iced Tea">Iced Tea</option>
+                </select>
+
+                <label for="special_instructions">
+                    Anything Else We Should Know?
+                </label>
+                <textarea id="special_instructions"
+                          name="special_instructions"
+                          rows="4"
+                          placeholder="Add any special requests here"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pickup Information</legend>
+
+                <label for="pickup-time">When Would You Like to Pick Up?</label>
+                <input type="text" id="pickup-time"
+                       name="pickup_time"
+                       placeholder="Example: November 10 at 12:30 PM"
+                       required>
+
+                <label for="pickup_name">Name for Pickup (if different):</label>
+                <input type="text" id="pickup_name"
+                       name="pickup_name">
+
+                <label for="pickup_instructions">Pickup Notes:</label>
+                <textarea id="pickup_instructions"
+                          name="pickup_instructions"
+                          rows="3"
+                          placeholder="Any details we should know?"></textarea>
+            </fieldset>
+
+            <div class="form_buttons">
+                <button type="submit">Place My Order</button>
+                <button type="reset" class="reset_button">Clear Form</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>2026 Philly Street Eats.</p>
+    </footer>
+
+</body>
+</html>
+```

@@ -1,0 +1,206 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7ed;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Food Truck Header */
+.truck_header {
+    text-align: center;
+    background-color: #7b241c;
+    color: white;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #7b241c;
+}
+
+.truck_header h2 {
+    color: white;
+}
+
+.truck_image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    margin: 15px auto;
+}
+
+/* Main Form Area */
+main {
+    max-width: 850px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.form_heading {
+    text-align: center;
+    font-size: 28px;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form Sections */
+fieldset {
+    background-color: white;
+    border: 2px solid #d6a15c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #7b241c;
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Food Menu */
+.menu_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #fff7ed;
+    border-radius: 6px;
+}
+
+.menu_item input {
+    margin-top: 7px;
+    flex-shrink: 0;
+}
+
+.menu_item label {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin: 12px 5px;
+}
+
+/* Keyboard Focus */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #e69b30;
+    outline-offset: 2px;
+}
+
+/* Buttons */
+.form_buttons {
+    text-align: center;
+    margin: 25px 0;
+}
+
+button {
+    background-color: #7b241c;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #a93226;
+}
+
+.reset_button {
+    background-color: #555555;
+}
+
+.reset_button:hover {
+    background-color: #333333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #7b241c;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .truck_header {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .truck_image {
+        width: 100%;
+    }
+
+    .form_buttons button {
+        width: 100%;
+        margin: 7px 0;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+}
